@@ -4,7 +4,7 @@
   "license": "MIT",
   "homepage": "https://github.com/axclever/partnerpage-resources-react#readme",
   "version": "1.0.0",
-  "description": "",
+  "description": "Partnerpage Resources component for React.",
   "main": "lib/index.js",
   "scripts": {
     "compile": "babel --presets @babel/preset-react -d lib/ src/",
