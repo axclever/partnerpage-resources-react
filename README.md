@@ -13,11 +13,11 @@ import PartnerpageResources from 'partnerpage-resources-react';
 
 <PartnerpageResources
   apiKey={"00000000-aaaa-aaaa-aaaa-00000000"}
-  partnerId={"1234567890"}
+  token={"1234567890"}
   mode={"frame"} // "default" or "frame"
 />
 ``` 
 
 * `apiKey`: the ID of your app.
-* `partnerId`: the ID of your partner.
+* `token`: public token (id).
 * `mode` (optional): how to render content. "default" - as plain HTML or "frame" inside iframe.
