@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from "prop-types";
 
 const CONFIG = {
-    widgetUrl: "https://d21mben2wlxyvj.cloudfront.net/widget.js",
+    widgetUrl: "https://resources-cdn.partnerpage.io/widget.js",
     RootNodeId: "PartnerpageEmbedWidget",
     allowedMethods: ["start"],
     defaultMode: "default"
