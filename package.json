@@ -3,7 +3,7 @@
   "author": "Alex Clever",
   "license": "MIT",
   "homepage": "https://github.com/axclever/partnerpage-resources-react#readme",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "typings": "types/index.d.ts",
   "description": "Partnerpage Resources component for React.",
   "main": "lib/index.js",
