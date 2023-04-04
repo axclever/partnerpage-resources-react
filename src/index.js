@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from "prop-types";
 
 const CONFIG = {
-    widgetUrl: "https://d234q4yvnowsmr.cloudfront.net/widget.js",
+    widgetUrl: "https://d21mben2wlxyvj.cloudfront.net/widget.js",
     RootNodeId: "PartnerpageEmbedWidget",
     allowedMethods: ["start"],
     defaultMode: "default"
@@ -14,16 +14,16 @@ class ResourcesWidget extends Component {
 
         this.state = {
             apiKey: props.apiKey,
-            partnerId: props.partnerId,
+            token: props.token,
             mode: props.mode
         };
     }
 
     static getDerivedStateFromProps(props, state) {
-        if (props.partnerId !== state.partnerId) {
+        if (props.token !== state.token) {
             // initialize Embed Widget
-            window.Partnerpage.start({el: `#${CONFIG.RootNodeId}`, partnerId: props.partnerId});
-            return {partnerId: props.partnerId};
+            window.Partnerpage.start({el: `#${CONFIG.RootNodeId}`, token: props.token});
+            return {token: props.token};
         }
 
         return null;
@@ -65,12 +65,12 @@ class ResourcesWidget extends Component {
 ResourcesWidget.defaultProps = {
     mode: CONFIG.defaultMode,
     apiKey: "",
-    partnerId: ""
+    token: ""
 };
 
 ResourcesWidget.propTypes = {
     apiKey: PropTypes.string.isRequired,
-    partnerId: PropTypes.string.isRequired,
+    token: PropTypes.string.isRequired,
     mode: PropTypes.oneOf(["default", "frame"])
 };
 
