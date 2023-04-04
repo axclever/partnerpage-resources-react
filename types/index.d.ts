@@ -3,7 +3,7 @@ import * as React from "react";
 declare module 'partnerpage-resources-react' {
     export interface ResourcesWidgetProps {
         apiKey: string;
-        partnerId: string;
+        token: string;
         mode?: string;
     }
 
